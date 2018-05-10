@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=yes"/>
+    <title>孟荣文建材装饰网</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <script type="text/javascript"  src="js/index.min.js"></script>
+    <script type="text/javascript"  src="js/jquery.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="header searchListHeader">
+            <div class="search">
+                <input type="text" class="searchBox" id="search" placeholder="请输入你要搜索的产品">
+                <p>
+                    <input type="button" id="btn"  value="搜索">
+                </p>
+            </div>
+            <ul class="nav">
+                <li><a href="javascript:;"  style="color:#ffa115;">综合</a><p style="background:#ffa115;"></p></li>
+                <li><a href="javascript:;">销量</a><p></p></li>
+                <li><a href="javascript:;">有货有限</a><p></p></li>
+                <li><a href="javascript:;">筛选</a><p></p></li>
+            </ul>
+    </div>
+    <!--内容-->
+    <div class="section goodsSection" id="section">
+        <div class="jingxuanContent" id="jingxuanBox">
+                <div class="jingxuanGoodBox">
+                    <a href="details.html">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/升光实木地板.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="contentTitle">升光实木地板</p>
+                    <div class="moneyBox">￥<span class="money">29<span><span>.00</span></span></span></div>
+                    
+                </div>
+                <div class="jingxuanGoodBox">
+                    <a href="javascript:;">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/雪花白大理石.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="contentTitle">雪花白大理石</p>
+                    <div class="moneyBox">￥<span class="money">49<span><span>.00</span></span></span></div>
+                    
+                </div>
+                <div class="jingxuanGoodBox">
+                    <a href="javascript:;">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="contentTitle">现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰</p>
+                    <div class="moneyBox">￥<span class="money">99<span><span>.00</span></span></span></div>
+                    
+                </div>
+                <div class="jingxuanGoodBox">
+                    <a href="javascript:;">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌 学习书桌联系人：孟先生13641887627.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="contentTitle">/预曲美家具家居 现代简约环保书房写字桌</p>
+                    <div class="moneyBox">￥<span class="money">19<span><span>.00</span></span></span></div>
+                    
+                </div>
+                <div class="jingxuanGoodBox">
+                    <a href="javascript:;">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/雪花白大理石.jpg" alt="">
+                        </div>
+                    </a>
+                    <p class="contentTitle">雪花白大理石</p>
+                    <div class="moneyBox">￥<span class="money">109<span><span>.00</span></span></span></div>
+                    
+                </div>
+                <div class="jingxuanGoodBox">
+                        <a href="details.html">
+                            <div class="imgbox">
+                                <img src="img/产品图/普通商品/升光实木地板.jpg" alt="">
+                            </div>
+                        </a>
+                        <p class="contentTitle">升光实木地板</p>
+                        <div class="moneyBox">￥<span class="money">88<span><span>.00</span></span></span></div>
+                        
+                    </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div></div>
+</body>
+</html>
+<script>
+(function(){
+    $(".nav li").each(function(i){
+        $(this).click(function(){
+            $(this).find("a").css({"color":"#ffa115"}).parent().siblings().find("p").css({"background":"none"});
+            $(this).find("p").css({"background":"#ffa115"}).parent().siblings().find("a").css({"color":"#333"});
+            $(".theBox").eq(i).css({"display":"block"}).siblings().css({"display":"none"});
+        })
+    })
+})()
+</script>

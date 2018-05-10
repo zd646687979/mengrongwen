@@ -1,0 +1,35 @@
+.search {
+  height: 100%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  padding: 0.42667rem;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .search input {
+    border: none;
+    display: block; }
+    .search input:focus {
+      outline: -webkit-focus-ring-color auto 0; }
+  .search .searchBox {
+    font-size: 0.34667rem;
+    text-indent: 0.85333rem;
+    width: 7.46667rem;
+    height: 0.85333rem;
+    border-radius: 0.42667rem;
+    background: url("../img/search.png") no-repeat 0.21333rem center;
+    background-size: 0.42667rem;
+    background-color: #f7f7f7; }
+  .search p {
+    height: 0.85333rem;
+    width: 1.28rem;
+    line-height: 0.85333rem;
+    border-radius: 0.13333rem;
+    background: #ffaa2c; }
+    .search p input {
+      height: 0.85333rem;
+      width: 1.28rem;
+      line-height: 0.85333rem;
+      background: none;
+      color: #fff;
+      font-size: 0.32rem; }

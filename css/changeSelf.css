@@ -1,0 +1,75 @@
+.selfSection {
+  height: 100%;
+  background: #fff;
+  font-size: 0.42667rem;
+  position: relative; }
+  .selfSection .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.14667rem;
+    width: 1.6rem;
+    font-size: 0.34667rem;
+    color: #50abfa;
+    background: none;
+    border: none; }
+    .selfSection .btn:focus {
+      outline: -webkit-focus-ring-color auto 0; }
+  .selfSection .selfHead {
+    height: 1.14667rem;
+    line-height: 1.14667rem;
+    text-align: center;
+    border-bottom: 1px solid #bdbdbd; }
+  .selfSection .headImgBox {
+    height: 2.66667rem;
+    position: relative; }
+    .selfSection .headImgBox .localImag {
+      height: 1.8rem;
+      width: 1.8rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto; }
+      .selfSection .headImgBox .localImag img {
+        height: 1.8rem;
+        width: 1.8rem;
+        box-shadow: 0.02667rem 0 0.13333rem rgba(0, 0, 0, 0.1), -0.02667rem 0 0.13333rem rgba(0, 0, 0, 0.1), 0 0.02667rem 0.13333rem rgba(0, 0, 0, 0.1), 0 -0.02667rem 0.13333rem rgba(0, 0, 0, 0.1); }
+    .selfSection .headImgBox .btnFile {
+      height: 1.8rem;
+      width: 1.8rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto; }
+      .selfSection .headImgBox .btnFile input {
+        height: 1.8rem;
+        width: 1.8rem;
+        opacity: 0; }
+  .selfSection .myContent li {
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    padding: 0.32rem 0.42667rem 0; }
+    .selfSection .myContent li p {
+      height: 0.85333rem;
+      line-height: 0.85333rem;
+      color: #999; }
+    .selfSection .myContent li input {
+      display: block;
+      height: 1.28rem;
+      width: 100%;
+      background: #f7f7f7;
+      border: none;
+      border-radius: 0.13333rem;
+      text-indent: 0.26667rem; }
+      .selfSection .myContent li input:focus {
+        outline: -webkit-focus-ring-color auto 0; }
+      .selfSection .myContent li input::-webkit-input-placeholder {
+        color: #999;
+        font-size: 0.34667rem; }

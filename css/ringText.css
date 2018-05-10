@@ -1,0 +1,88 @@
+.ringTextHeader {
+  background: #fff;
+  color: #333;
+  font-size: 0.42667rem; }
+  .ringTextHeader .nav {
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1.14667rem;
+    flex: 1;
+    background: #f7f7f7; }
+    .ringTextHeader .nav li {
+      height: 100%;
+      display: -webkit-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .ringTextHeader .nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 1.14667rem;
+        padding: 0 0.21333rem;
+        text-align: center; }
+      .ringTextHeader .nav li p {
+        position: absolute;
+        width: 0.4rem;
+        height: #ffa115;
+        height: 1px;
+        bottom: 0.18667rem;
+        margin: 0 auto; }
+
+.ringTextSection {
+  font-size: 0.42667rem;
+  color: #333;
+  background: #fff; }
+  .ringTextSection .ringTextContentBox {
+    -webkit-box-sizing: border-box;
+    padding: 0.42667rem;
+    border-bottom: 1px solid #bdbdbd; }
+    .ringTextSection .ringTextContentBox .textTitle {
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.21333rem; }
+      .ringTextSection .ringTextContentBox .textTitle p {
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column; }
+        .ringTextSection .ringTextContentBox .textTitle p span {
+          line-height: 0.74667rem;
+          height: 0.74667rem; }
+        .ringTextSection .ringTextContentBox .textTitle p .names {
+          line-height: 0.45333rem;
+          height: 0.45333rem; }
+      .ringTextSection .ringTextContentBox .textTitle a {
+        height: 1.01333rem;
+        line-height: 1.01333rem;
+        width: 2.13333rem;
+        color: #6dff17;
+        border: .5px solid #6dff17;
+        border-radius: 0.13333rem;
+        text-align: center; }
+    .ringTextSection .ringTextContentBox .zbcContentBox {
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-box-sizing: border-box;
+      padding: 0 0.21333rem 0;
+      background: #f7f7f7; }
+      .ringTextSection .ringTextContentBox .zbcContentBox img {
+        width: 1.46667rem;
+        height: 1.46667rem;
+        margin: 0.21333rem 0; }
+      .ringTextSection .ringTextContentBox .zbcContentBox p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-sizing: border-box;
+        padding-left: 0.21333rem;
+        font-size: 0.37333rem;
+        color: #333;
+        line-height: 0.6rem; }
+        .ringTextSection .ringTextContentBox .zbcContentBox p span {
+          color: #50abfa; }

@@ -1,0 +1,177 @@
+.ucenterSection {
+  font-size: 0.42667rem; }
+  .ucenterSection .userHead {
+    background: url("../img/mine_bg.png") repeat-y;
+    background-size: 100% 1px; }
+    .ucenterSection .userHead .headTop {
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      -webkit-box-sizing: border-box;
+      padding: 0 0.42667rem; }
+      .ucenterSection .userHead .headTop .headerLeft {
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1; }
+        .ucenterSection .userHead .headTop .headerLeft img {
+          height: 1.8rem;
+          width: 1.8rem;
+          margin: 0.42667rem 0;
+          box-shadow: 0.02667rem 0 0.13333rem rgba(0, 0, 0, 0.1), -0.02667rem 0 0.13333rem rgba(0, 0, 0, 0.1), 0 0.02667rem 0.13333rem rgba(0, 0, 0, 0.1), 0 -0.02667rem 0.13333rem rgba(0, 0, 0, 0.1); }
+        .ucenterSection .userHead .headTop .headerLeft .titleName {
+          height: 100%;
+          padding-left: 0.26667rem;
+          -webkit-box-sizing: border-box; }
+          .ucenterSection .userHead .headTop .headerLeft .titleName p {
+            color: #fff; }
+          .ucenterSection .userHead .headTop .headerLeft .titleName .icord {
+            font-size: 0.32rem;
+            color: #fdd6bf;
+            padding-top: 0.21333rem; }
+      .ucenterSection .userHead .headTop .headerRight {
+        width: 2.66667rem;
+        height: 2rem;
+        display: -webkit-flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #fff;
+        font-size: 0.32rem; }
+        .ucenterSection .userHead .headTop .headerRight span:last-child {
+          font-size: 0.42667rem; }
+    .ucenterSection .userHead .dateilNum {
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.21333rem; }
+      .ucenterSection .userHead .dateilNum li {
+        width: 2rem;
+        height: 100%; }
+        .ucenterSection .userHead .dateilNum li a {
+          color: #fff; }
+        .ucenterSection .userHead .dateilNum li p span {
+          display: block;
+          line-height: 0.72rem;
+          height: 0.72rem;
+          text-align: center; }
+        .ucenterSection .userHead .dateilNum li p .classify {
+          font-size: 0.34667rem; }
+  .ucenterSection .orderBox {
+    background: #fff;
+    margin-top: 0.21333rem; }
+    .ucenterSection .orderBox .orderTitle {
+      -webkit-box-sizing: border-box;
+      padding: 0 0.42667rem;
+      border-bottom: 1px solid #bdbdbd;
+      height: 0.86667rem;
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center; }
+      .ucenterSection .orderBox .orderTitle a {
+        color: #666;
+        font-size: 0.32rem;
+        padding: 0.21333rem;
+        padding-right: 0; }
+    .ucenterSection .orderBox .orderOptionBox {
+      padding: 0 0.42667rem;
+      -webkit-box-sizing: border-box; }
+      .ucenterSection .orderBox .orderOptionBox .orderOption {
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.37333rem 0; }
+        .ucenterSection .orderBox .orderOptionBox .orderOption li {
+          width: 1.73333rem;
+          font-size: 0.32rem; }
+          .ucenterSection .orderBox .orderOptionBox .orderOption li .iconfont {
+            font-size: 0.66667rem;
+            color: #ffa115; }
+          .ucenterSection .orderBox .orderOptionBox .orderOption li p {
+            color: #666;
+            display: -webkit-flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column; }
+      .ucenterSection .orderBox .orderOptionBox .newOrderBox {
+        padding-bottom: 0.42667rem; }
+        .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder {
+          background: #f7f7f7;
+          border-radius: 0.13333rem;
+          padding: 0 0.21333rem;
+          -webkit-box-sizing: border-box; }
+          .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder .newTitle {
+            line-height: 0.72rem;
+            height: 0.72rem;
+            color: #999;
+            font-size: 0.29333rem; }
+          .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder .newContent {
+            padding: 0 0 0.42667rem;
+            display: -webkit-flex;
+            justify-content: space-between;
+            align-items: center; }
+            .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder .newContent img {
+              height: 0.74667rem;
+              width: 0.74667rem; }
+            .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder .newContent div {
+              flex: 1;
+              display: -webkit-flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              flex-direction: column;
+              -webkit-box-sizing: border-box;
+              padding: 0 0.32rem; }
+              .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder .newContent div p {
+                font-size: 0.29333rem;
+                color: #999;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              .ucenterSection .orderBox .orderOptionBox .newOrderBox .newOrder .newContent div .noTop {
+                color: #60b1fa; }
+  .ucenterSection .mineorder {
+    margin-top: 0.21333rem;
+    background: #fff; }
+    .ucenterSection .mineorder li {
+      height: 1.49333rem;
+      border-bottom: .5px solid #bdbdbd; }
+      .ucenterSection .mineorder li div {
+        height: 100%;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.42667rem;
+        -webkit-box-sizing: border-box; }
+        .ucenterSection .mineorder li div p {
+          color: #333;
+          display: -webkit-flex;
+          justify-content: flex-start;
+          align-items: center; }
+          .ucenterSection .mineorder li div p .iconfont {
+            color: #ffa115;
+            padding-right: 0.42667rem;
+            font-size: 0.64rem;
+            font-weight: 100; }
+        .ucenterSection .mineorder li div .iconfont {
+          font-size: 0.42667rem;
+          font-weight: 600;
+          color: #666; }
+      .ucenterSection .mineorder li:nth-child(2) div p .iconfont {
+        color: #60b1fa; }
+  .ucenterSection .outUser {
+    height: 1.2rem;
+    background: #fff;
+    margin-top: 0.42667rem;
+    margin-bottom: 0.37333rem;
+    border-top: .5px solid #bdbdbd;
+    border-bottom: .5px solid #bdbdbd; }
+    .ucenterSection .outUser input {
+      width: 100%;
+      line-height: 1.17333rem;
+      height: 1.17333rem;
+      text-align: center;
+      font-size: 0.34667rem;
+      color: #333;
+      background: none;
+      border: none; }
+      .ucenterSection .outUser input:focus {
+        outline: -webkit-focus-ring-color auto 0; }

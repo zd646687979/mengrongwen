@@ -1,0 +1,55 @@
+.ringNewSection {
+  height: 100%;
+  background: #fff; }
+  .ringNewSection .newsBox {
+    -webkit-box-sizing: border-box;
+    padding: 0.42667rem;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #bdbdbd; }
+    .ringNewSection .newsBox img {
+      height: 0.96rem;
+      width: 0.96rem; }
+    .ringNewSection .newsBox .usersBox {
+      display: -webkit-flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-left: 0.21333rem; }
+      .ringNewSection .newsBox .usersBox .name {
+        font-size: 0.34667rem;
+        color: #333; }
+      .ringNewSection .newsBox .usersBox .userid {
+        font-size: 0.29333rem;
+        color: #999; }
+    .ringNewSection .newsBox .contentBox {
+      flex: 1;
+      margin-left: 0.21333rem;
+      -webkit-box-sizing: border-box;
+      padding-left: 0.21333rem;
+      padding-right: 0.21333rem;
+      font-size: 0.34667rem;
+      color: #333; }
+      .ringNewSection .newsBox .contentBox .content {
+        background: #f7f7f7;
+        line-height: 0.85333rem;
+        display: block; }
+        .ringNewSection .newsBox .contentBox .content span {
+          display: block;
+          width: 6.13333rem;
+          white-space: wrap;
+          -webkit-box-sizing: border-box;
+          padding-left: 0.21333rem; }
+      .ringNewSection .newsBox .contentBox .times {
+        padding-top: 0.42667rem;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #999; }
+        .ringNewSection .newsBox .contentBox .times p span {
+          padding-left: 0.85333rem; }
+        .ringNewSection .newsBox .contentBox .times p .agree {
+          color: #2ebb5c; }
+        .ringNewSection .newsBox .contentBox .times p .disagree {
+          color: #f96363; }

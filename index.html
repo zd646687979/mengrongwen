@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=yes"/>
+    <title>孟荣文建材装饰网</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript"  src="js/index.min.js"></script>
+    <script type="text/javascript"  src="js/jquery.min.js"></script>
+    <script type="text/javascript"  src="js/swiper-4.2.2.min.js"></script>
+    <script type="text/javascript"  src="js/swiper.animate1.0.3.min.js"></script>
+</head>
+<body>
+
+<!--头部-->
+<div class="header"></div>
+
+<!--内容-->
+    <div class="section" id="section">
+
+        <!--banner-->
+        <div class="swiper-container">
+            <div id="banner" class="swiper-wrapper">
+                <!-- <div class="swiper-slide"><a href=""><img src=""/></a></div>
+                <div class="swiper-slide"><a href=""><img src=""/></a></div>
+                <div class="swiper-slide"><a href=""><img src=""/></a></div>
+                <div class="swiper-slide"><a href=""><img src=""/></a></div>
+                <div class="swiper-slide"><a href=""><img src=""/></a></div> -->
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination" style="bottom: 0;"></div>
+            <!--search-->
+            <a class="search" href="search.html" >
+                <span class="spanLogo"></span>
+                <span class="spanSearch"></span>
+                <span class="spanText">请输入你要搜索的产品</span>
+            </a>
+        </div>
+        <script>
+            //循环banner
+            (function(){
+                var datas = [{"href":"tel:15317082886","src":"img/产品图/banner2.jpg"},
+                        {"href":"tel:15317082886","src":"img/产品图/banner1.jpg"}
+                        ]
+                let result = "";
+                for(let i in datas){
+                    result +='<div class="swiper-slide"><a href="'+datas[i].href+'"><img src="'+datas[i].src+'"/></a></div>';
+                }
+                $('#banner').append(result);
+            })()
+        </script>
+        <!--分类-->
+        <div class="classifyBox">
+            <div class="swiper-wrapper" id="classify">
+                    <!-- <div class="swiper-slide"><ul class="classify">
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                    </ul></div>
+                    <div class="swiper-slide"><ul class="classify">
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                    </ul></div> -->
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination" style="bottom: 0;"></div>
+        </div>
+        <script>
+            //循环分类
+            (function(){
+                let datas1 = [
+                        {href:"classify.html",src:"img/建材.png"},
+                        {href:"classify.html",src:"img/家具.png"},
+                        {href:"classify.html",src:"img/体育用品.png"},
+                        {href:"classify.html",src:"img/家用电器.png"},
+                        {href:"javascript:;",src:"img/找工长.png"},
+                        {href:"javascript:;",src:"img/装修公司.png"},
+                        {href:"javascript:;",src:"img/材料商.png"},
+                        {href:"javascript:;",src:"img/设计师.png"},
+                        {href:"javascript:;",src:"img/装修案例.png"},
+                        {href:"javascript:;",src:"img/在建工地.png"},
+                        {href:"javascript:;",src:"img/团装小区.png"},
+                        {href:"javascript:;",src:"img/学装修.png"},
+                        {href:"javascript:;",src:"img/优惠信息.png"},
+                        {href:"javascript:;",src:"img/优惠活动.png"}
+                ];
+                let pageNum = Math.ceil(datas1.length/8);
+                for(let i = 0 ; i<pageNum ; i++){
+                    //先加入页数
+                    let result = '<div class="swiper-slide"><ul class="classify"></ul></div>';
+                    $('#classify').append(result);
+
+                    let result1= "";
+                    for(let j = i*8; j<(i+1)*8;j++){
+                        if(j>=datas1.length){
+                            break;
+                        }
+                        //循环每页内容
+                        result1 += '<li><a href="'+datas1[j].href+'"><img src="'+datas1[j].src+'" alt=""></a></li>';
+                    }
+                    //再给每页加入内容
+                    $('#classify').find(".classify").eq(i).append(result1);
+                }
+            })()
+            
+        </script>
+        <!--活动通知-->
+        <div class="partyBox">
+            <div id="party" class="swiper-wrapper" >
+                    <!-- <div class="swiper-slide">
+                            <a class="party" href="" >
+                            <span class="partyTitle"></span>
+                            <span class="partyContent"></span>'
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a class="party" href="" >
+                            <span class="partyTitle"></span>
+                            <span class="partyContent"></span>'
+                        </a>
+                    </div> -->
+            </div>
+        </div>
+        <script>
+            //循环活动
+            (function(){
+                let datas = [
+                    {href:"javasript:;",title:"活动通知",content:"团购开始啦! 多人团购拼单更划算快来拼吧！"},
+                    {href:"javasript:;",title:"促销通知",content:"促销开始啦! 升光实木地板大降价！"},
+                    {href:"javasript:;",title:"娱乐通知",content:"玩小游戏赢红包！快来玩吧！！"}
+                ]
+                let result = "";
+                for(let i in datas){
+                    result +=   '<div class="swiper-slide">'
+                                +'<a class="party" href="'+datas[i].href+'" >'
+                                +'<span class="partyTitle">'+datas[i].title+'</span>'
+                                +'<span class="partyContent">'+datas[i].content+'</span>' 
+                                +'</a></div>';
+                }
+                $('#party').append(result);
+
+                //广告滚动
+                var partySwiper = new Swiper ('.partyBox', {
+                    direction: 'vertical',
+                    loop:true,
+                    preventIntercationOnTransition:true,
+                    autoplay: {
+                        delay: 2000,//1秒切换一次
+                        disableOnInteraction: false
+                    },
+                    speed:500
+                })
+            })()
+        </script>
+
+        <!--精选特价-->
+        <div class="jingxuan" id="jingxuan">
+            <div class="jingxuantitle">
+                <div class="titleLeft">
+                    <span class="titleTop">精选特价</span>
+                    <span>没有最低！只有更低!</span>
+                </div>
+                <div class="titleRight"><a href="javascript:;">更多 &gt;</a></div>
+            </div>
+            <div class="jingxuanContent" id="jingxuanBox">
+                    <a href="details.html">
+                        <div class="jingxuanGoodBox">
+                            <div class="imgbox">
+                                <img src="img/产品图/普通商品/升光实木地板.jpg" alt="">
+                            </div>
+                            <p class="contentTitle">升光实木地板</p>
+                            <div class="moneyBox">￥<span class="money">49<span><span>.00</span></span></span></div>
+                        </div>
+                    </a>
+                    <a href="details.html">
+                        <div class="jingxuanGoodBox">
+                            <div class="imgbox">
+                                <img src="img/产品图/普通商品/雪花白大理石.jpg" alt="">
+                            </div>
+                            <p class="contentTitle">雪花白大理石</p>
+                            <div class="moneyBox">￥<span class="money">2000<span><span>.00</span></span></span></div>
+                        </div>
+                    </a>
+                    <a href="details.html">
+                        <div class="jingxuanGoodBox">
+                            <div class="imgbox">
+                                <img src="img/产品图/普通商品/现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰.jpg" alt="">
+                            </div>
+                            <p class="contentTitle">现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰</p>
+                            <div class="moneyBox">￥<span class="money">460<span><span>.00</span></span></span></div>
+                        </div>
+                    </a>
+                    <a href="details.html">
+                        <div class="jingxuanGoodBox">
+                            <div class="imgbox">
+                                <img src="img/产品图/普通商品/预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌 学习书桌联系人：孟先生13641887627.jpg" alt="">
+                            </div>
+                            <p class="contentTitle">预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌</p>
+                            <div class="moneyBox">￥<span class="money">253<span><span>.00</span></span></span></div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+        <script>
+            //循环特价
+            // (function(){
+            //     let datas = [{href:"details.html",src:"img/产品图/起帆电线6平方.jpg",title:"起帆电线6平方起帆电线6平方起帆电线6平方起帆电线6平方",money:310.99},
+            //         {href:"javasript:;",src:"img/产品图/红砖_85砖批发零售.jpg",title:"红砖_85砖批发零售",money:7.9},
+            //         {href:"javasript:;",src:"img/产品图/上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量.jpg",title:"上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量",money:120},
+            //         {href:"javasript:;",src:"img/产品图/厂家批发最新款四孔超漩式连体陶瓷普通马桶坐便器卫浴.jpg",title:"厂家批发最新款四孔超漩式连体陶瓷普通马桶坐便器卫浴",money:420}]
+            //     let result = "";
+            //     for(let i in datas){
+            //         result +=   '<a href="'+datas[i].href+'"><div class="jingxuanGoodBox"><div class="imgbox">'
+            //                     +'<img src="'+datas[i].src+'" alt=""></div>'
+            //                     +'<p class="contentTitle">'+datas[i].title+'</p>'
+            //                     +'<div class="moneyBox">￥<span class="money">'+(""+datas[i].money).slice(0,(""+datas[i].money).indexOf("."))+'<span><span>'+(""+datas[i].money).slice((""+datas[i].money).indexOf("."))+'</span></div>' 
+            //                     +'</div></a>';
+            //     }
+            //     $('#jingxuanBox').append(result);
+            // })()
+        </script>
+
+        <!--实惠团购-->
+        <div class="tuangou" id="tuangou">
+            <div class="title">
+                <p class="title1"><span style="color:#0ab64a;">实惠</span>团购</p>
+                <p class="title2">没有最低！只有更低</p>
+            </div>
+            <div class="tuangoucontent" >
+                <a href="tuanDetail.html">
+                    <div class="imgbox">
+                        <img src="img/产品图/上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量.jpg" alt="">
+                    </div>
+                </a>
+                <div class="tgContentRight">
+                    <p class="contentTitle tgContentTitle">上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量门测量门测量</p>
+                    <div class="moneyBox">￥<span class="money">998<span><span>.00</span></div>
+                    <p class="price">单买价￥<span>1299</span>.00</p>
+                    <a href="tuanDetail.html">马上开团</a>
+                </div>
+            </div>
+        </div>
+        <script>
+        //循环团购
+            // (function(){
+            //     let datas = [{href:"tuanDetail.html",
+            //                 src:"img/产品图/普通商品/吉祥牌 低压高压绝缘地毯橡胶板 配电房专用 绝缘胶板胶垫子 红色.jpg",
+            //                 title:"吉祥牌 低压高压绝缘地毯橡胶板 配电房专用 绝缘胶板胶垫子 红色",
+            //                 price:90,
+            //                 money:90}]
+            //     let result = "";
+            //     for(let i in datas){
+            //         result +=   '<div class="tuangoucontent" ><a href="'+datas[i].href+'"><div class="imgbox">'
+            //                     +'<img src="'+datas[i].src+'" alt=""></div></a><div class="tgContentRight">'
+            //                     +'<p class="contentTitle tgContentTitle">'+datas[i].title+'</p>'
+            //                     +'<div class="moneyBox">￥<span class="money">'+datas[i].money+'<span><span>.00</span></div>' 
+            //                     +'<p class="price">单买价￥<span>'+datas[i].price+'</span>.00</p>'
+            //                     +'<a href="'+datas[i].href+'">马上开团</a></div></div>';
+            //     }
+            //     $('#tuangou').append(result);
+            // })()
+        </script>
+
+        <!--品牌专区-->
+        <div class="pinpai">
+            <div class="title">
+                <p class="title1"><span style="color:#405ae5;">品牌</span>专区</p>
+                <p class="title2">没有最低！只有更低</p>
+            </div>
+            <div id="pinpaiContentBox">
+                    <div class="pinpaiContentBox">
+                        <div class="pinpaititle">
+                            <div class="pinpaiLeft">
+                                <a href="shop.html"><img src="img/logo.png" alt=""></a>
+                                <div>
+                                    <span class="titleTop">木月家具</span>
+                                    <span>百年老店，手艺传承</span>
+                                </div>
+                            </div>
+                            <div class="titleRight"><a href="shop.html">更多 &gt;</a></div>
+                        </div>
+                        <div class="pinpaiContent">
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/加富FJ-6 防静电台垫1.5米宽 2mm橡胶台垫 维修工作台桌垫胶皮.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">维修工作台桌垫胶皮</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/收银台柜台简约现代超市便利店美容院服装店小型前台接待台吧台桌.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">接待台吧台桌</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/阳光房断桥铝.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">阳光房断桥铝</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/预曲美家具家居 简约置物架书房木质书柜环保书架 多功能展示架.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">多功能展示架</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/瓷砖300 300室内小地砖厨房厕所阳台卫生间地面砖防滑耐磨.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">地面砖防滑耐磨</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinpaiContentBox">
+                        <div class="pinpaititle">
+                            <div class="pinpaiLeft">
+                                <a href="shop.html"><img src="img/logo.png" alt=""></a>
+                                <div>
+                                    <span class="titleTop">木月家具</span>
+                                    <span>百年老店，手艺传承</span>
+                                </div>
+                            </div>
+                            <div class="titleRight"><a href="shop.html">更多 &gt;</a></div>
+                        </div>
+                        <div class="pinpaiContent">
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/1.6刨花板.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">刨花板</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/8D立体海洋世界地砖.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">立体海洋世界地砖</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/75天地龙骨.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">天地龙骨</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/L型铝合金 40x80x5mm 角铝包边 L型不等边角铝.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">L型不等边角铝</p>
+                                </div>
+                            </div>
+                            <div class="imgbox">
+                                <a href="details.html">
+                                    <img src="img/产品图/普通商品/阀门.jpg" alt="">
+                                </a>
+                                <div>
+                                    <p></p>
+                                    <p class="theText">阀门</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <a class="more" href="javascript:;">查看更多</a>
+        </div>
+        <script>
+            //循环品牌
+                // (function(){
+                //     let datas = [{
+                //         title:{
+                //             titleImg:"http://img.alicdn.com/imgextra/i2/56/TB2HaHqdOMnBKNjSZFCXXX0KFXa_!!56-0-luban.jpg",
+                //             titleHref:"shop.html",
+                //             title:"木月家具",
+                //             littleTitle:"百年老店，手艺传承"
+                //         },
+                //         content:[
+                //             {href:"details.html",
+                //             imgsrc:"img/产品图/普通商品/升光实木地板.jpg",
+                //             content:"升光实木地板"
+                //             },
+                //             {href:"details.html",
+                //             imgsrc:"img/产品图/普通商品/加富FJ-6 防静电台垫1.5米宽 2mm橡胶台垫 维修工作台桌垫胶皮.jpg",
+                //             content:"防静电台垫"
+                //             },
+                //             {href:"details.html",
+                //             imgsrc:"img/产品图/普通商品/美加乐纱窗.jpg",
+                //             content:"美加乐纱窗"
+                //             },
+                //             {href:"details.html",
+                //             imgsrc:"img/产品图/普通商品/雪花白大理石.jpg",
+                //             content:"雪花白大理石"
+                //             },
+                //             {href:"details.html",
+                //             imgsrc:"img/产品图/普通商品/阳光房断桥铝.jpg",
+                //             content:"阳光房断桥铝"
+                //             }
+                //         ]
+                //     },{
+                //         title:{
+                //             titleImg:"http://img.alicdn.com/imgextra/i2/56/TB2HaHqdOMnBKNjSZFCXXX0KFXa_!!56-0-luban.jpg",
+                //             titleHref:"javascript:;",
+                //             title:"木月家具",
+                //             littleTitle:"百年老店，手艺传承"
+                //         },
+                //         content:[
+                //             {href:"javasript",
+                //             imgsrc:"img/产品图/普通商品/预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌 学习书桌联系人：孟先生13641887627.jpg",
+                //             content:"预曲美家具家居"
+                //             },
+                //             {href:"javasript",
+                //             imgsrc:"img/产品图/普通商品/预曲美家具家居 简约置物架书房木质书柜环保书架 多功能展示架.jpg",
+                //             content:"多功能展示架"
+                //             },
+                //             {href:"javasript",
+                //             imgsrc:"img/产品图/普通商品/收银台柜台简约现代超市便利店美容院服装店小型前台接待台吧台桌.jpg",
+                //             content:"收银台柜台"
+                //             },
+                //             {href:"javasript",
+                //             imgsrc:"img/产品图/普通商品/透明亚克力板任意定制有机玻璃板材定做加工定做0.512345681020mm.jpg",
+                //             content:"透明亚克力板"
+                //             },
+                //             {href:"javasript",
+                //             imgsrc:"img/产品图/普通商品/75天地龙骨.jpg",
+                //             content:"天地龙骨"
+                //             }
+                //         ]
+                //     }];
+                //     console.log(datas.length);
+                //     for(let i in datas){
+                //         let result = "";
+                //         result +=   '<div class="pinpaiContentBox"><div class="pinpaititle"><div class="pinpaiLeft">'
+                //                     +'<a href="'+datas[i].title.titleHref+'"><img src="'+datas[i].title.titleImg+'" alt=""></a><div>'
+                //                     +'<span class="titleTop">'+datas[i].title.title+'</span><span>'+datas[i].title.littleTitle+'</span></div></div>'
+                //                     +'<div class="titleRight"><a href='+datas[i].title.titleHref+'>更多 &gt;</a></div></div><div class="pinpaiContent"></div>'
+                //         $('#pinpaiContentBox').append(result);
+                //         result1 = "";
+                //         let content = datas[i].content;
+                //         for(let j in content){
+                //             result1 += '<div class="imgbox"><a href="'+content[j].href+'">'
+                //                         +'<img src="'+content[j].imgsrc+'" alt=""></a><div><p></p>'
+                //                         +'<p class="theText">'+content[j].content+'</p></div></div>';
+                //         }
+                //         $('.pinpaiContentBox').eq(i).find(".pinpaiContent").append(result1);
+                //     }
+                // })()
+                
+        </script>
+        <!--热门推荐-->
+        <div class="hot">
+            <div class="hotTitle"><img src="img/精选特价标题.png" alt=""></div>
+            <div class="jingxuanContent" id="hotBox">
+                <a href="details.html">
+                    <div class="jingxuanGoodBox">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/美加乐纱窗.jpg" alt="">
+                        </div>
+                        <p class="contentTitle">美加乐纱窗</p>
+                        <div class="moneyBox">￥<span class="money">39<span><span>.00</span></div>
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="jingxuanGoodBox">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/盼盼防盗门.jpg" alt="">
+                        </div>
+                        <p class="contentTitle">盼盼防盗门</p>
+                        <div class="moneyBox">￥<span class="money">2199<span><span>.00</span></div>
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="jingxuanGoodBox">
+                        <div class="imgbox">
+                            <img src="img/产品图/普通商品/王者瓷砖 大理石客厅地砖 墙 电视背景墙 百合玉KAY0829450.jpg" alt="">
+                        </div>
+                        <p class="contentTitle">王者瓷砖 大理石客厅地砖 墙 电视背景墙 百合玉</p>
+                        <div class="moneyBox">￥<span class="money">79<span><span>.00</span></div>
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="jingxuanGoodBox">
+                        <div class="imgbox">
+                            <img src="img/产品图/厂家批发最新款四孔超漩式连体陶瓷普通马桶坐便器卫浴.jpg" alt="">
+                        </div>
+                        <p class="contentTitle">厂家批发最新款四孔超漩式连体陶瓷普通马桶坐便器卫浴</p>
+                        <div class="moneyBox">￥<span class="money">499<span><span>.00</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script>
+            //循环热门
+            // (function(){
+            //     let datas = [
+            //                 {
+            //                 "href":"details.html",
+            //                 "title":"升光实木地板",
+            //                 "imgsrc":"img/产品图/普通商品/升光实木地板.jpg",
+            //                 "money":"49"
+            //                 },
+            //                 {
+            //                 "href":"details.html",
+            //                 "title":"雪花白大理石",
+            //                 "imgsrc":"img/产品图/普通商品/雪花白大理石.jpg",
+            //                 "money":"2000"
+            //                 },
+            //                 {
+            //                 "href":"details.html",
+            //                 "title":"现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰",
+            //                 "imgsrc":"img/产品图/普通商品/现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰.jpg",
+            //                 "money":"460"
+            //                 },
+            //                 {
+            //                 "href":"details.html",
+            //                 "title":"预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌",
+            //                 "imgsrc":"img/产品图/普通商品/预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌 学习书桌联系人：孟先生13641887627.jpg",
+            //                 "money":"253"
+            //                 }
+            //             ]
+            //     let result = "";
+            //     for(let i in datas){
+            //         result +=   '<a href="'+datas[i].href+'">'
+            //                                 +'<div class="jingxuanGoodBox">'
+            //                                 +'<div class="imgbox">'
+            //                                 +'<img src="'+datas[i].imgsrc+'" alt="">'   
+            //                                 +'</div>'
+            //                                 +'<p class="contentTitle">'+datas[i].title+'</p>'
+            //                                 +'<div class="moneyBox">￥<span class="money">'+datas[i].money+'<span><span>.00</span></div>'
+            //                                 +'</div>'
+            //                             +'</a>';
+            //     }
+            //     $('#hotBox').append(result);
+            // })()
+        </script>
+    </div>
+    
+<!--底部-->
+<ul class="footer">
+    <li><a href="javascript:;" ><i class="iconfont icon-shouye"></i><span>首页</span></a></li>
+    <li><a href="classify.html"><i class="iconfont icon-yingyongchengxu-xianxing"></i><span>产品</span></a></li>
+    <li><a href="ring.html"><img src="img/login_Cof.png" alt=""></a></li>
+    <li><a href="shopping.html"><i class="iconfont icon-caigou-xianxing"></i><span>购物车</span></a></li>
+    <li><a href="ucenter.html"><i class="iconfont icon-yonghu-xianxing"></i><span>我的</span></a></li>
+</ul>
+</body>
+</html>
+<script src="js/dropload.min.js"></script>
+<script type="text/javascript"  src="js/index.js"></script>
+<script>
+    $(function(){
+    var mydatas =[
+                    {
+                    "href":"details.html",
+                    "title":"升光实木地板",
+                    "imgsrc":"img/产品图/普通商品/升光实木地板.jpg",
+                    "money":"49"
+                    },
+                    {
+                    "href":"details.html",
+                    "title":"雪花白大理石",
+                    "imgsrc":"img/产品图/普通商品/雪花白大理石.jpg",
+                    "money":"2000"
+                    },
+                    {
+                    "href":"details.html",
+                    "title":"现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰",
+                    "imgsrc":"img/产品图/普通商品/现代简约水晶灯具客厅灯卧室灯餐厅灯书房灯饰.jpg",
+                    "money":"460"
+                    },
+                    {
+                    "href":"details.html",
+                    "title":"预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌",
+                    "imgsrc":"img/产品图/普通商品/预曲美家具家居 现代简约环保书房写字桌 字台 电脑桌 学习书桌联系人：孟先生13641887627.jpg",
+                    "money":"253"
+                    }
+                ]
+	var $scrollBox = $("#section");
+    // dropload
+    $('#section').dropload({
+        scrollArea :$scrollBox,
+        loadDownFn : function(me){
+            let count = $(".hot .jingxuanGoodBox").length;
+            console.log("现在页面上有"+count+"条数据。");
+            // 拼接HTML
+            let result = '';
+                        for(var i=0; i<mydatas.length; i++){
+                            result +=   '<a href="'+mydatas[i].href+'">'
+                                            +'<div class="jingxuanGoodBox">'
+                                            +'<div class="imgbox">'
+                                            +'<img src="'+mydatas[i].imgsrc+'" alt="">'   
+                                            +'</div>'
+                                            +'<p class="contentTitle">'+mydatas[i].title+'</p>'
+                                            +'<div class="moneyBox">￥<span class="money">'+mydatas[i].money+'<span><span>.00</span></div>'
+                                            +'</div>'
+                                        +'</a>';
+                     }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        // 插入数据到页面，放到最后面
+                        $('#hotBox').append(result);
+                        // 每次数据插入，必须重置
+                        me.resetload();
+                    },1000);
+                },
+                error: function(xhr, type){
+                    console.log('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+        });
+    })
+</script>
+<script src="js/footer.js"></script>

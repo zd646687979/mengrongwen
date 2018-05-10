@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=yes"/>
+    <title>孟荣文建材装饰网</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+    <script type="text/javascript"  src="js/jquery.min.js"></script>
+    <script type="text/javascript"  src="js/index.min.js"></script>
+    <script type="text/javascript"  src="js/swiper-4.2.2.min.js"></script>
+    <script type="text/javascript"  src="js/swiper.animate1.0.3.min.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div></div>
+    <!--内容-->
+    <div class="section detailsSection" id="section">
+        <!-- celltell-->
+        <a href="tel:15317082886"><img class="phone" src="img/tell_bg.png" alt=""></a>
+        <!--banner-->
+        <div class="swiper-container">
+            <div id="banner" class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/产品图/上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量.jpg"/></div>
+                <div class="swiper-slide"><img src="img/产品图/上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量.jpg"/></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination" style="bottom: 0;"></div>
+        </div>
+        <script>
+            var bannerSwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal',
+                speed:250,
+                preloadImages:false,
+                preventIntercationOnTransition:true,
+                lazy: {
+                    loadPrevNext: true,
+                },
+                // 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            });
+        </script>
+        <!-- 商品详情 -->
+        <div class="goodsDetail">
+            <div class="detailContent">
+                <div class="money">
+                    <p class="red">￥<span>99.00</span></p>
+                    <p class="gray">价格<span>179</span></p>
+                </div>
+                <p class="detailTitle">名品秒杀 透气款 极速达 2018春夏新上市名品秒杀 透气款 极速达 2018春夏新上市</p>
+            </div>
+            <p class="share"><a href="javascript:;"><img src="img/share_bg.png" alt=""></a></p>
+        </div>
+        <!-- 查看规格 -->
+        <p class="lookSpec" id="lookSpec"><span>查看规格</span><i class="iconfont icon-xiayiyeqianjinchakangengduo"></i></p>
+        <div class="specBg" id="specBg">
+            <div class="specBox" id="specBox">
+                <div class="specTop">
+                    <img src="img/产品图/上海定制中式实木客厅卧室百叶窗帘遮光隔断竹百叶帘椴木上门测量.jpg" alt="">
+                    <p>名品秒杀 透气款 极速达 2018春夏新上市名品秒杀 透气款 极速达 2018春夏新上市</p>
+                </div>
+                <ul class="specs">
+                    <li>
+                        <p class="specsTitle">属性</p>
+                        <p class="specsContent">
+                            <span>10KG</span><span>4KG</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="specsTitle">规格</p>
+                        <p class="specsContent">
+                            <span>25*4.2</span><span>32*5.5</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="specsTitle">颜色</p>
+                        <p class="specsContent">
+                            <span>绿色</span><span>红色</span><span>黄色</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="specBottom closeThis"><input type="button" class="specBtn" value="完成"></div>
+                <p class="closeSpec closeThis"><i class="iconfont icon-cuowuguanbiquxiao-yuankuang"></i></p>
+            </div>
+        </div>
+        <!-- 商品介绍 -->
+        <div class="goodsDescribe">
+            <p class="describeTitle">商品简介</p>
+            <p class="describeContent"></p>
+        </div>
+    </div>
+    <!--底部-->
+    <div></div>
+</body>
+</html>
+<script>
+    
+    $("#lookSpec").click(function(){
+        $("#specBg").height($("#section").scrollTop()+$("#section").height());
+        $("#specBg").css({"display":"block"});
+        $("#specBox").css({bottom:-1*($("#section").scrollTop()+750)});
+        $("#specBox").animate({bottom:0},500);
+        $("#section").css({"overflow-y":"hidden"})
+    })
+    $(".closeThis").click(function(){
+        $("#specBox").animate({bottom:-1*($("#section").scrollTop()+750)},500);
+        setTimeout(function(){
+            $("#specBg").css({"display":"none"});
+        },500)
+        $("#section").css({"overflow-y":"auto"})
+    })
+</script>

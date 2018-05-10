@@ -1,0 +1,335 @@
+.detailsSection {
+  height: 100%;
+  font-size: 0.42667rem;
+  position: relative; }
+  .detailsSection .phone {
+    position: fixed;
+    bottom: 0.85333rem;
+    right: 0.42667rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    z-index: 999999999999; }
+  .detailsSection .swiper-container {
+    width: 100%;
+    height: 10rem;
+    overflow-x: hidden;
+    border-top: .5px solid #bdbdbd;
+    border-bottom: .5px solid #bdbdbd; }
+    .detailsSection .swiper-container .swiper-pagination-bullet {
+      padding: 1px;
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #fff;
+      opacity: .5; }
+    .detailsSection .swiper-container .swiper-pagination-bullet-active {
+      opacity: .5;
+      background: red; }
+    .detailsSection .swiper-container .swiper-slide a {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-radius: 0; }
+    .detailsSection .swiper-container img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .detailsSection .times {
+    height: 1.17333rem;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../img/mine_bg.png") repeat-y;
+    background-size: 100% 2px; }
+    .detailsSection .times div {
+      height: 100%; }
+    .detailsSection .times .timeLeft {
+      width: 6.53333rem;
+      -webkit-box-sizing: border-box;
+      padding-left: 0.42667rem;
+      display: -webkit-flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .detailsSection .times .timeLeft .num {
+        height: 0.48rem;
+        width: 2rem;
+        -webkit-box-sizing: border-box;
+        border-radius: 0.13333rem;
+        border: 1px solid #fff;
+        overflow: hidden;
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .detailsSection .times .timeLeft .num span {
+          display: block;
+          height: 0.45333rem;
+          text-align: center;
+          width: 0.48rem;
+          background: #fff;
+          font-size: 0.26667rem;
+          color: #ff9615; }
+          .detailsSection .times .timeLeft .num span:last-child {
+            flex: 1;
+            background: none;
+            color: #fff; }
+      .detailsSection .times .timeLeft .money {
+        padding-left: 0.21333rem;
+        font-size: 0.34667rem;
+        color: #fff; }
+        .detailsSection .times .timeLeft .money .moneyNum {
+          font-size: 0.42667rem; }
+    .detailsSection .times .timesRight {
+      width: 3.46667rem;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .detailsSection .times .timesRight .lastTime {
+        font-size: 0.29333rem;
+        color: #ff2815; }
+      .detailsSection .times .timesRight .timeBox {
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.29333rem; }
+        .detailsSection .times .timesRight .timeBox .boxs {
+          display: block;
+          height: 0.42667rem;
+          line-height: 0.42667rem;
+          width: 0.42667rem;
+          text-align: center;
+          background: #ff9815;
+          color: #fff; }
+        .detailsSection .times .timesRight .timeBox span {
+          color: #ff2815; }
+  .detailsSection .goodsDetail {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    padding: 0.42667rem;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center; }
+    .detailsSection .goodsDetail .detailContent {
+      flex: 1; }
+      .detailsSection .goodsDetail .detailContent .money {
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: flex-end; }
+        .detailsSection .goodsDetail .detailContent .money .red {
+          font-size: 0.53333rem;
+          color: #f95353; }
+        .detailsSection .goodsDetail .detailContent .money .gray {
+          font-size: 0.34667rem;
+          color: #999;
+          padding-left: 0.13333rem; }
+          .detailsSection .goodsDetail .detailContent .money .gray span {
+            text-decoration: line-through; }
+      .detailsSection .goodsDetail .detailContent .detailTitle {
+        color: #333;
+        line-height: 0.64rem;
+        width: 7.46667rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden; }
+    .detailsSection .goodsDetail .share {
+      width: 0.85333rem;
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center; }
+      .detailsSection .goodsDetail .share img {
+        width: 0.66667rem;
+        height: 1.2rem; }
+  .detailsSection .lookSpec {
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-top: 0.21333rem;
+    line-height: 0.85333rem;
+    height: 0.85333rem;
+    padding: 0 0.42667rem;
+    -webkit-box-sizing: border-box;
+    color: #666;
+    font-size: 0.34667rem; }
+  .detailsSection .specBg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 100001; }
+    .detailsSection .specBg .specBox {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      padding: 0.42667rem 0 0;
+      -webkit-box-sizing: border-box; }
+      .detailsSection .specBg .specBox .specTop {
+        -webkit-box-sizing: border-box;
+        padding: 0 0.42667rem;
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 0.21333rem; }
+        .detailsSection .specBg .specBox .specTop img {
+          height: 2.13333rem;
+          width: 2.13333rem; }
+        .detailsSection .specBg .specBox .specTop p {
+          -webkit-box-sizing: border-box;
+          padding-left: 0.21333rem;
+          color: #333;
+          line-height: 0.64rem;
+          width: 6.66667rem;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden; }
+      .detailsSection .specBg .specBox .specs {
+        -webkit-box-sizing: border-box;
+        padding: 0.21333rem 0.42667rem 0.42667rem; }
+        .detailsSection .specBg .specBox .specs .specsTitle {
+          line-height: 0.93333rem;
+          font-size: 0.37333rem;
+          color: #333; }
+        .detailsSection .specBg .specBox .specs .specsContent {
+          display: -webkit-flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap; }
+          .detailsSection .specBg .specBox .specs .specsContent span {
+            padding: 0.21333rem;
+            font-size: 0.32rem;
+            color: #666;
+            background: #f7f7f7;
+            border-radius: 0.13333rem;
+            margin-right: 0.21333rem; }
+      .detailsSection .specBg .specBox .specBottom {
+        height: 1.28rem;
+        background: #ffaa2c; }
+        .detailsSection .specBg .specBox .specBottom input {
+          height: 100%;
+          width: 100%;
+          font-size: 0.37333rem;
+          color: #fff;
+          background: none;
+          border: none; }
+      .detailsSection .specBg .specBox .closeSpec {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.21333rem; }
+  .detailsSection .goodsDescribe {
+    color: #333;
+    -webkit-box-sizing: border-box;
+    padding: 0 0.42667rem;
+    font-size: 0.37333rem;
+    margin-top: 0.21333rem;
+    margin-bottom: 1.28rem;
+    background: #fff; }
+    .detailsSection .goodsDescribe .describeTitle {
+      height: 1.30667rem;
+      line-height: 1.30667rem; }
+    .detailsSection .goodsDescribe .describeContent {
+      padding: 0 0 0.42667rem;
+      color: #999;
+      font-size: 0.32rem; }
+  .detailsSection .partake {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0.34667rem;
+    color: #fff;
+    background: #fff;
+    height: 1.28rem;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #bdbdbd; }
+    .detailsSection .partake div {
+      height: 100%; }
+    .detailsSection .partake .left {
+      width: 5.46667rem;
+      height: 1.28rem;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      color: #333; }
+      .detailsSection .partake .left .money {
+        font-size: 0.42667rem;
+        color: #f95353; }
+    .detailsSection .partake .right {
+      flex: 1;
+      background: #ffaa2c;
+      height: 1.28rem;
+      line-height: 1.28rem;
+      text-align: center; }
+  .detailsSection .getSometing {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1000;
+    top: 0em; }
+    .detailsSection .getSometing .prompt {
+      height: 4.08rem;
+      width: 9.17333rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 3.84rem;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 0.13333rem;
+      display: -webkit-flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center; }
+      .detailsSection .getSometing .prompt .top {
+        height: 2.93333rem;
+        width: 100%; }
+        .detailsSection .getSometing .prompt .top p {
+          font-size: 0.42667rem;
+          text-align: center; }
+          .detailsSection .getSometing .prompt .top p span {
+            color: #ffaa2c; }
+          .detailsSection .getSometing .prompt .top p:first-child {
+            color: #333;
+            line-height: 1.25333rem;
+            height: 1.25333rem; }
+          .detailsSection .getSometing .prompt .top p:last-child() {
+            color: #666;
+            line-height: 1.2rem;
+            height: 1.2rem; }
+        .detailsSection .getSometing .prompt .top .content {
+          text-align: left;
+          font-size: 0.37333rem;
+          padding: 0 0.42667rem; }
+      .detailsSection .getSometing .prompt .btnBox {
+        height: 1.17333rem;
+        -webkit-box-sizing: border-box;
+        border-top: 1px solid #bdbdbd;
+        width: 100%;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center; }
+        .detailsSection .getSometing .prompt .btnBox p {
+          font-size: 0.42667rem;
+          height: 1.17333rem;
+          line-height: 1.17333rem;
+          text-align: center;
+          width: 100%; }
+        .detailsSection .getSometing .prompt .btnBox .close {
+          color: #ffaa2c; }

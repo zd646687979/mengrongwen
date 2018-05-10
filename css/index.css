@@ -1,0 +1,444 @@
+.section .swiper-container {
+  width: 100%;
+  height: 3.94667rem;
+  overflow-x: hidden; }
+  .section .swiper-container .swiper-pagination-bullet {
+    padding: 1px;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: .5; }
+  .section .swiper-container .swiper-pagination-bullet-active {
+    opacity: .5;
+    background: red; }
+  .section .swiper-container .swiper-slide a {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-radius: 0; }
+    .section .swiper-container .swiper-slide a img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .section .swiper-container a {
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0.21333rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 7.73333rem;
+    height: 0.85333rem;
+    background: #fff;
+    border-radius: 0.45333rem;
+    z-index: 99999; }
+    .section .swiper-container a span {
+      padding: 0 0.2rem;
+      display: block; }
+    .section .swiper-container a .spanLogo {
+      width: 0.77333rem;
+      height: 0.42667rem;
+      border-right: 1px solid #bdbdbd;
+      background: url("../img/logo.png") center no-repeat;
+      background-size: 0.77333rem 0.4rem; }
+    .section .swiper-container a .spanSearch {
+      width: 0.32rem;
+      height: 0.32rem;
+      background: url("../img/search.png") center no-repeat;
+      background-size: 0.32rem 0.32rem; }
+    .section .swiper-container a .spanText {
+      font-size: 0.32rem;
+      padding-left: 0;
+      color: #999;
+      line-height: 0.4rem;
+      height: 0.4rem; }
+
+.section .classifyBox {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 0.42667rem;
+  overflow-x: hidden; }
+  .section .classifyBox .swiper-pagination-bullet {
+    padding: 1px;
+    width: 0.42667rem;
+    height: 4px;
+    display: inline-block;
+    border-radius: 4px;
+    background: #999; }
+  .section .classifyBox .swiper-pagination-bullet-active {
+    background: #333; }
+  .section .classifyBox .classify {
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 0.42667rem; }
+    .section .classifyBox .classify li img {
+      width: 1.6rem;
+      height: 2.16rem;
+      padding: 0 0.42667rem 0.42667rem; }
+
+.section .partyBox {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 9.14667rem;
+  border-radius: 0.42667rem;
+  background: #fff;
+  height: 0.85333rem;
+  display: -webkit-flex;
+  box-sizing: border-box;
+  margin: 0.42667rem 0 0 0.42667rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 0.42667rem;
+  background: url("../img/laba.png") no-repeat 0.42667rem center;
+  background-size: 0.34667rem 0.32rem;
+  overflow: hidden; }
+  .section .partyBox .swiper-wrapper {
+    background-size: 0.34667rem 0.32rem;
+    height: 100%;
+    width: 100%;
+    padding-left: 0.74667rem; }
+  .section .partyBox .party {
+    display: block;
+    height: 0.85333rem;
+    align-items: center;
+    line-height: 0.85333rem;
+    overflow: hidden; }
+    .section .partyBox .party span {
+      float: left;
+      vertical-align: middle; }
+    .section .partyBox .party .partyTitle {
+      color: #ff5c5c;
+      font-size: 0.34667rem;
+      width: 1.42667rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .section .partyBox .party .partyContent {
+      margin-top: 1px;
+      margin-left: 0.21333rem;
+      color: #666;
+      font-size: 0.32rem;
+      width: 6.13333rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+
+.section .tuangou img, .section .jingxuan img, .section .hot img {
+  display: block;
+  border-radius: 0.13333rem; }
+
+.section .tuangou .moneyBox, .section .jingxuan .moneyBox, .section .hot .moneyBox {
+  font-size: 0.4rem;
+  color: #f95353; }
+  .section .tuangou .moneyBox span, .section .jingxuan .moneyBox span, .section .hot .moneyBox span {
+    font-size: 0.29333rem; }
+  .section .tuangou .moneyBox .money, .section .jingxuan .moneyBox .money, .section .hot .moneyBox .money {
+    font-size: 0.4rem; }
+
+.section .a {
+  color: #333; }
+
+.section .contentTitle {
+  font-size: 0.42667rem;
+  line-height: 0.64rem;
+  -webkit-box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden; }
+
+.section .title {
+  font-size: 0.42667rem;
+  columns: #333; }
+  .section .title p {
+    text-align: center; }
+  .section .title .title1 {
+    line-height: 0.85333rem;
+    height: 0.85333rem; }
+  .section .title .title2 {
+    font-size: 0.29333rem;
+    color: #999; }
+
+.section .jingxuan {
+  -webkit-box-sizing: border-box;
+  padding: 0.42667rem 0.42667rem 0;
+  background: #fff;
+  margin-top: 0.42667rem; }
+  .section .jingxuan .jingxuantitle {
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0.98667rem;
+    font-size: 0.42667rem;
+    margin-bottom: 0.32rem; }
+    .section .jingxuan .jingxuantitle .titleLeft {
+      display: -webkit-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 4.26667rem;
+      height: 100%;
+      color: #333333; }
+      .section .jingxuan .jingxuantitle .titleLeft span {
+        display: block;
+        color: #999;
+        font-size: 0.29333rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%; }
+      .section .jingxuan .jingxuantitle .titleLeft .titleTop {
+        font-size: 0.42667rem;
+        color: #333; }
+    .section .jingxuan .jingxuantitle .titleRight {
+      height: 100%;
+      width: 1.33333rem; }
+      .section .jingxuan .jingxuantitle .titleRight a {
+        text-align: right;
+        font-size: 0.32rem;
+        color: #50abfa;
+        display: block;
+        line-height: 0.90667rem;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle; }
+  .section .jingxuan .jingxuanContent {
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; }
+    .section .jingxuan .jingxuanContent .jingxuanGoodBox {
+      padding: 0 0 0.42667rem;
+      width: 4.37333rem; }
+      .section .jingxuan .jingxuanContent .jingxuanGoodBox .imgbox {
+        width: 4.37333rem;
+        height: 4.37333rem;
+        overflow: hidden;
+        border-radius: 0.13333rem; }
+      .section .jingxuan .jingxuanContent .jingxuanGoodBox img {
+        height: 100%;
+        float: left; }
+
+.section .tuangou {
+  padding: 0.21333rem 0.42667rem 0.42667rem;
+  -webkit-box-sizing: border-box;
+  background: #fff;
+  margin-top: 0.21333rem; }
+  .section .tuangou .tuangoucontent {
+    height: 4.37333rem;
+    width: 100%;
+    display: -webkit-flex;
+    padding-top: 0.4rem; }
+    .section .tuangou .tuangoucontent .imgbox {
+      width: 4.37333rem;
+      height: 4.37333rem;
+      overflow: hidden;
+      border-radius: 0.13333rem; }
+    .section .tuangou .tuangoucontent img {
+      height: 100%;
+      float: left; }
+  .section .tuangou .tgContentRight {
+    flex: 1;
+    padding-left: 0.21333rem;
+    position: relative; }
+    .section .tuangou .tgContentRight .tgContentTitle {
+      -webkit-line-clamp: 3; }
+    .section .tuangou .tgContentRight .price {
+      line-height: 0.50667rem;
+      font-size: 0.29333rem;
+      color: #666; }
+    .section .tuangou .tgContentRight a {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      color: #fff;
+      font-size: 0.34667rem;
+      height: 1.17333rem;
+      line-height: 1.17333rem;
+      text-align: center;
+      width: 100%;
+      border-radius: 0.58667rem;
+      background: #ff8401; }
+
+.section .pinpai {
+  padding: 0.21333rem 0.42667rem 0.42667rem;
+  -webkit-box-sizing: border-box;
+  background: #fff;
+  margin-top: 0.21333rem; }
+  .section .pinpai .title {
+    margin-bottom: 0.56rem; }
+  .section .pinpai .pinpaiContentBox .pinpaititle {
+    -webkit-box-sizing: border-box;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0.88rem;
+    font-size: 0.32rem; }
+    .section .pinpai .pinpaiContentBox .pinpaititle img {
+      display: block;
+      width: 0.88rem;
+      height: 0.88rem; }
+    .section .pinpai .pinpaiContentBox .pinpaititle .pinpaiLeft {
+      display: -webkit-flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 4.26667rem;
+      height: 100%;
+      color: #333333; }
+      .section .pinpai .pinpaiContentBox .pinpaititle .pinpaiLeft div {
+        padding-left: 0.21333rem;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%; }
+        .section .pinpai .pinpaiContentBox .pinpaititle .pinpaiLeft div .titleTop {
+          font-size: 0.34667rem;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%; }
+        .section .pinpai .pinpaiContentBox .pinpaititle .pinpaiLeft div span {
+          display: block;
+          font-size: 0.29333rem;
+          line-height: 0.32rem;
+          height: 0.32rem;
+          color: #666;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%; }
+    .section .pinpai .pinpaiContentBox .pinpaititle .titleRight {
+      width: 1.33333rem; }
+      .section .pinpai .pinpaiContentBox .pinpaititle .titleRight a {
+        color: #50abfa;
+        display: block;
+        line-height: 0.90667rem;
+        height: 100%;
+        width: 100%;
+        text-align: right; }
+  .section .pinpai .pinpaiContentBox .pinpaiContent {
+    -webkit-box-sizing: border-box;
+    padding: 0.18667rem 0 0.4rem;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0.13333rem;
+    overflow: hidden; }
+    .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox {
+      width: 2.98667rem;
+      height: 1.78667rem;
+      border-radius: 0.13333rem;
+      position: relative;
+      margin-bottom: 4px;
+      border-bottom-left-radius: 0.13333rem;
+      border-bottom-right-radius: 0.13333rem;
+      overflow: hidden; }
+      .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox img {
+        width: 100%;
+        float: left; }
+      .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox:nth-child(1) {
+        width: 6.06667rem;
+        height: 3.57333rem; }
+        .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox:nth-child(1) div {
+          height: 0.74667rem;
+          font-size: 0.37333rem; }
+      .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox:nth-child(2) {
+        width: 2.98667rem;
+        height: 3.57333rem; }
+      .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox div {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0.66667rem;
+        line-height: 0.66667rem;
+        text-align: left;
+        font-size: 0.32rem; }
+        .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox div p {
+          height: 100%;
+          width: 100%;
+          opacity: .2;
+          background: #000;
+          color: #fff;
+          text-indent: 0.21333rem;
+          position: absolute; }
+        .section .pinpai .pinpaiContentBox .pinpaiContent .imgbox div .theText {
+          opacity: 1;
+          background: none; }
+  .section .pinpai .more {
+    font-size: 0.42667rem;
+    display: block;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 9.14667rem;
+    border: .5px solid #bdbdbd;
+    border-radius: 0.13333rem;
+    color: #666;
+    text-align: center; }
+
+.section .hot {
+  -webkit-box-sizing: border-box;
+  margin-top: 0.21333rem;
+  background: #fff; }
+  .section .hot .hotTitle {
+    height: 1.33333rem;
+    background: #f7f7f7;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center; }
+    .section .hot .hotTitle img {
+      display: block;
+      height: 0.69333rem;
+      width: 2.66667rem; }
+  .section .hot .jingxuanContent {
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.42667rem 0.42667rem 0.42667rem;
+    -webkit-box-sizing: border-box; }
+    .section .hot .jingxuanContent .jingxuanGoodBox {
+      padding: 0 0 0.42667rem;
+      width: 4.37333rem; }
+      .section .hot .jingxuanContent .jingxuanGoodBox .imgbox {
+        width: 4.37333rem;
+        height: 4.37333rem;
+        overflow: hidden;
+        border-radius: 0.13333rem; }
+      .section .hot .jingxuanContent .jingxuanGoodBox img {
+        height: 100%;
+        float: left; }
+
+.section .dropload-refresh {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.42667rem; }
+
+.section .dropload-load {
+  margin: 0.4rem 0;
+  height: 0.4rem;
+  background: #f7f7f7;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.37333rem; }
+  .section .dropload-load span {
+    color: #666; }

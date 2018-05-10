@@ -1,0 +1,379 @@
+.ringSection {
+  display: -webkit-flex;
+  flex-direction: column; }
+  .ringSection .banner {
+    height: 5.2rem;
+    overflow: hidden;
+    position: relative; }
+    .ringSection .banner img {
+      height: 100%; }
+    .ringSection .banner .newMsg {
+      -webkit-box-sizing: border-box;
+      background: #fff;
+      position: absolute;
+      top: 0.45333rem;
+      right: 0;
+      padding: 0 0.21333rem 0 0.42667rem;
+      line-height: 0.74667rem;
+      height: 0.74667rem;
+      font-size: 0.34667rem;
+      color: #666;
+      border-top-left-radius: 0.32rem;
+      border-bottom-left-radius: 0.32rem; }
+      .ringSection .banner .newMsg span {
+        color: #f95353; }
+  .ringSection .content {
+    display: -webkit-flex;
+    flex-direction: column;
+    background: #fff;
+    flex: 1; }
+  .ringSection .topBox {
+    background: #f7f7f7;
+    position: relative;
+    height: 1.14667rem;
+    font-size: 0.42667rem; }
+    .ringSection .topBox .navBox {
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      -webkit-box-sizing: border-box; }
+      .ringSection .topBox .navBox .nav {
+        display: -webkit-flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 1.14667rem;
+        flex: 1; }
+        .ringSection .topBox .navBox .nav li {
+          height: 100%;
+          display: -webkit-flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative; }
+          .ringSection .topBox .navBox .nav li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 1.14667rem;
+            padding: 0 0.21333rem;
+            text-align: center; }
+          .ringSection .topBox .navBox .nav li p {
+            position: absolute;
+            width: 0.4rem;
+            height: #ffa115;
+            height: 1px;
+            bottom: 0.18667rem;
+            margin: 0 auto; }
+      .ringSection .topBox .navBox .navRight {
+        width: 2.26667rem;
+        height: 100%; }
+    .ringSection .topBox .navName {
+      position: absolute;
+      top: -1.14667rem;
+      height: 1.14667rem;
+      line-height: 1.14667rem;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      padding-right: 2.4rem;
+      text-align: right;
+      color: #fff; }
+    .ringSection .topBox .headImg {
+      position: absolute;
+      bottom: 0.21333rem;
+      right: 0.42667rem;
+      box-shadow: 0.02667rem 0 0.13333rem rgba(0, 0, 0, 0.1), -0.02667rem 0 0.13333rem rgba(0, 0, 0, 0.1), 0 0.02667rem 0.13333rem rgba(0, 0, 0, 0.1), 0 -0.02667rem 0.13333rem rgba(0, 0, 0, 0.1); }
+      .ringSection .topBox .headImg img {
+        width: 1.8rem;
+        height: 1.8rem; }
+  .ringSection .ringContent .contentBox {
+    background: #fff;
+    padding-bottom: 0.21333rem;
+    border-bottom: .5px solid #bdbdbd; }
+    .ringSection .ringContent .contentBox:last-child {
+      border: none; }
+    .ringSection .ringContent .contentBox .usersBox {
+      -webkit-box-sizing: border-box;
+      padding-left: 0.42667rem;
+      display: -webkit-flex;
+      justify-content: flex-start;
+      -webkit-box-sizing: border-box;
+      padding-top: 0.42667rem; }
+      .ringSection .ringContent .contentBox .usersBox img {
+        width: 0.85333rem;
+        height: 0.85333rem; }
+      .ringSection .ringContent .contentBox .usersBox .userRight {
+        height: 0.85333rem;
+        display: -webkit-flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        -webkit-box-sizing: border-box;
+        padding-left: 0.26667rem; }
+        .ringSection .ringContent .contentBox .usersBox .userRight .names {
+          font-size: 0.34667rem;
+          color: #333; }
+        .ringSection .ringContent .contentBox .usersBox .userRight .company {
+          font-size: 0.29333rem;
+          color: #999;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 5.33333rem; }
+    .ringSection .ringContent .contentBox .detailUsersBox {
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 0.42667rem; }
+      .ringSection .ringContent .contentBox .detailUsersBox .left {
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: center; }
+      .ringSection .ringContent .contentBox .detailUsersBox .userRight {
+        height: 0.85333rem;
+        display: -webkit-flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        -webkit-box-sizing: border-box;
+        padding-left: 0.26667rem; }
+        .ringSection .ringContent .contentBox .detailUsersBox .userRight .names {
+          font-size: 0.34667rem;
+          color: #333; }
+        .ringSection .ringContent .contentBox .detailUsersBox .userRight .company {
+          font-size: 0.29333rem;
+          color: #999;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 2rem; }
+      .ringSection .ringContent .contentBox .detailUsersBox .time {
+        font-size: 0.32rem;
+        color: #999; }
+    .ringSection .ringContent .contentBox .userContent {
+      -webkit-box-sizing: border-box;
+      padding: 0.21333rem 0.42667rem 0.21333rem 1.52rem; }
+      .ringSection .ringContent .contentBox .userContent .zbcContentBox {
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: center;
+        -webkit-box-sizing: border-box;
+        padding: 0 0.21333rem 0;
+        background: #f7f7f7; }
+        .ringSection .ringContent .contentBox .userContent .zbcContentBox img {
+          width: 1.46667rem;
+          height: 1.46667rem;
+          margin: 0.16rem 0 0.32rem; }
+        .ringSection .ringContent .contentBox .userContent .zbcContentBox p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          -webkit-box-sizing: border-box;
+          padding-left: 0.21333rem;
+          font-size: 0.37333rem;
+          color: #333;
+          line-height: 0.6rem; }
+          .ringSection .ringContent .contentBox .userContent .zbcContentBox p span {
+            color: #50abfa; }
+      .ringSection .ringContent .contentBox .userContent .ssBox {
+        color: #333;
+        font-size: 0.37333rem;
+        padding-top: 0.21333rem; }
+        .ringSection .ringContent .contentBox .userContent .ssBox .sstitle {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 6;
+          overflow: hidden;
+          line-height: 0.64rem; }
+        .ringSection .ringContent .contentBox .userContent .ssBox .more {
+          color: #50abfa;
+          font-size: 0.37333rem;
+          text-align: left;
+          line-height: 0.64rem;
+          height: 0.64rem; }
+        .ringSection .ringContent .contentBox .userContent .ssBox .ssImgBox {
+          display: -webkit-flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          width: 4.66667rem; }
+          .ringSection .ringContent .contentBox .userContent .ssBox .ssImgBox img {
+            padding: 0.05333rem; }
+          .ringSection .ringContent .contentBox .userContent .ssBox .ssImgBox .img1 {
+            width: 3.6rem;
+            height: 4.93333rem; }
+          .ringSection .ringContent .contentBox .userContent .ssBox .ssImgBox .img2 {
+            width: 2.13333rem;
+            height: 2.13333rem; }
+      .ringSection .ringContent .contentBox .userContent .detailText {
+        font-size: 0.37333rem;
+        color: #666;
+        padding-bottom: 0.21333rem; }
+      .ringSection .ringContent .contentBox .userContent .imgBox {
+        width: 100%; }
+        .ringSection .ringContent .contentBox .userContent .imgBox img {
+          width: 100%; }
+    .ringSection .ringContent .contentBox .commentBox {
+      -webkit-box-sizing: border-box;
+      padding: 0 0.42667rem 0 1.52rem; }
+      .ringSection .ringContent .contentBox .commentBox .commentTop {
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #999;
+        font-size: 0.29333rem;
+        height: 0.98667rem; }
+        .ringSection .ringContent .contentBox .commentBox .commentTop .iconfont {
+          font-size: 0.53333rem;
+          padding: 0.21333rem 0.21333rem; }
+      .ringSection .ringContent .contentBox .commentBox .comment {
+        background: #f7f7f7;
+        position: relative;
+        padding: 0.13333rem 0; }
+        .ringSection .ringContent .contentBox .commentBox .comment .trigon {
+          background: #f7f7f7;
+          width: 0.26667rem;
+          height: 0.26667rem;
+          position: absolute;
+          left: 0.46667rem;
+          top: -0.13333rem;
+          transform: rotateZ(45deg); }
+        .ringSection .ringContent .contentBox .commentBox .comment p, .ringSection .ringContent .contentBox .commentBox .comment div {
+          font-size: 0.34667rem;
+          color: #333;
+          line-height: 0.64rem;
+          -webkit-box-sizing: border-box;
+          padding: 0 0.21333rem; }
+          .ringSection .ringContent .contentBox .commentBox .comment p span, .ringSection .ringContent .contentBox .commentBox .comment div span {
+            color: #666; }
+    .ringSection .ringContent .contentBox .detail {
+      color: #333;
+      font-size: 0.42667rem;
+      line-height: 0.64rem;
+      -webkit-box-sizing: border-box;
+      padding: 0.42667rem 0.42667rem 0; }
+    .ringSection .ringContent .contentBox .yusuan {
+      font-size: 0.37333rem;
+      color: #666;
+      padding: 0.21333rem 0 0.42667rem;
+      padding: 0.21333rem 0.42667rem 0;
+      -webkit-box-sizing: border-box; }
+    .ringSection .ringContent .contentBox .detailuserContent {
+      padding-left: 0.42667rem; }
+    .ringSection .ringContent .contentBox .detailcommentBox {
+      padding-left: 0.42667rem; }
+  .ringSection .zhaobiaoDetailBox {
+    margin-bottom: 1.33333rem; }
+  .ringSection .inputComment {
+    display: none;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: 1.73333rem;
+    background: #fff;
+    padding: 0 0.42667rem;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    border-top: .5px solid #bdbdbd;
+    overflow: hidden; }
+    .ringSection .inputComment input {
+      float: left;
+      width: 6.93333rem;
+      height: 0.66667rem;
+      line-height: 0.66667rem;
+      border: none;
+      border-bottom: 1px solid #bdbdbd;
+      background: #fff;
+      vertical-align: middle;
+      margin-top: 0.21333rem; }
+      .ringSection .inputComment input:focus {
+        outline: -webkit-focus-ring-color auto 0; }
+    .ringSection .inputComment p {
+      float: right;
+      width: 1.33333rem;
+      height: 0.8rem;
+      line-height: 0.93333rem;
+      margin-right: 0.29333rem;
+      font-size: 0.37333rem;
+      color: #666;
+      text-align: center;
+      border: 1px solid #bdbdbd;
+      border-radius: 5px;
+      vertical-align: middle;
+      margin-top: 0.10667rem; }
+  .ringSection .zhaobiaoDetailInput {
+    z-index: 10000000; }
+  .ringSection .getSometing {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 1000; }
+    .ringSection .getSometing .prompt {
+      height: 4.08rem;
+      width: 9.17333rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 3.84rem;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 0.13333rem;
+      display: -webkit-flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center; }
+      .ringSection .getSometing .prompt .top {
+        height: 2.93333rem;
+        width: 100%; }
+        .ringSection .getSometing .prompt .top p {
+          font-size: 0.42667rem;
+          text-align: center; }
+          .ringSection .getSometing .prompt .top p span {
+            color: #ffaa2c; }
+          .ringSection .getSometing .prompt .top p:first-child {
+            color: #333;
+            line-height: 1.25333rem;
+            height: 1.25333rem; }
+          .ringSection .getSometing .prompt .top p:last-child() {
+            color: #666;
+            font-size: 0.37333rem;
+            line-height: 1.2rem;
+            height: 1.2rem; }
+      .ringSection .getSometing .prompt .btnBox {
+        height: 1.17333rem;
+        -webkit-box-sizing: border-box;
+        border-top: 1px solid #bdbdbd;
+        width: 100%;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center; }
+        .ringSection .getSometing .prompt .btnBox p {
+          font-size: 0.42667rem;
+          height: 1.17333rem;
+          line-height: 1.17333rem;
+          text-align: center;
+          width: 4.57333rem; }
+        .ringSection .getSometing .prompt .btnBox .close {
+          color: #666;
+          border-right: 1px solid #bdbdbd; }
+        .ringSection .getSometing .prompt .btnBox .goLook {
+          color: #ffaa2c; }
+  .ringSection .zhaobiaoDetail {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.21333rem 0;
+    background: #fff; }
+    .ringSection .zhaobiaoDetail .navBox {
+      display: -webkit-flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .ringSection .zhaobiaoDetail .navBox img {
+        width: 1.73333rem;
+        height: 1.01333rem; }
+      .ringSection .zhaobiaoDetail .navBox p {
+        width: 0.8rem; }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>孟荣文建材装饰网</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/ring.css">
+    <script type="text/javascript"  src="js/jquery.min.js"></script>
+    <script type="text/javascript"  src="js/index.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header ringHeader"></div>
+<!--内容-->
+<div class="section ringSection">
+    <!--content内容-->
+    <div class="content">
+        <!--内容-->
+        <div class="ringContent zhaobiaoDetailBox">
+            <div class="contentBox">
+                <!-- 标题 -->
+                <div class="detail">
+                    招一名瓦匠工人、一名刮瓷。每天120外带午餐，全勤工期半年。做五休二
+                </div>
+                <!--发布者-->
+                <div class="usersBox detailUsersBox">
+                    <div class="left">
+                            <a href="javascript:;"><img src="img/headerImg.png" alt=""></a>
+                            <a href="javascript:;">
+                                <div class="userRight">
+                                    <p class="names">孟荣文</p>
+                                    <p class="company">业主</p>
+                                </div>
+                            </a>
+                    </div>
+                    <p class="time">16分钟前</p>
+                </div>
+                <p class="yusuan">预算：<span>3万以下</span></p>
+                <div class="detailuserContent userContent">
+                    <div class="detailText">京公司招做杂活儿工人，限男性，要求20到50岁，身体健康，3-招工人，电焊工，车床工人，UG画图，学徒工，招做香工人，供吃住。</div>
+                    <div class="imgBox">
+                        <img src="img/shuoshuoImg2.png" alt="">
+                        <img src="img/shuoshuoImg3.png" alt="">
+                    </div>
+                </div>
+                <!--评论-->
+                <div class="detailcommentBox commentBox">
+                    <div class="commentTop">
+                        <p class="timeBox"></p>
+                        <p class="praiseBox"> <i id="praise" class="iconfont icon-haoping"></i><i class="iconfont icon-liaotianduihua"></i></p>
+                    </div>
+                    <div class="comment">
+                        <div class="trigon"></div>
+                        <p><input type="hidden" value="1"><span>宋振明</span>：工资一次结清还是按天算？</p>
+                        <p><input type="hidden" value="2"><span>孟荣文</span>回复<span>宋振明</span>：电话私聊我</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 输入框 -->
+    <div class="inputComment zhaobiaoDetailInput" id="inputComment">
+        <input type="text" id="comment"><p>发送</p>
+    </div>
+    <!-- 底部点击 -->
+    <div class="getSometing" style="display:none;">
+        <div class="prompt">
+            <div class="top">
+                <p>已发送请求</p>
+                <p>稍后您可在<span>我的</span>&gt;<span>圈子文档</span>中查看</p>
+            </div>
+            <div class="btnBox">
+                <p class="close">知道了</p>
+                <a class="close" href="ucenter/ringText.html">
+                    <p class="goLook">去查看</p>
+                </a>
+            </div>
+        </div>
+    </div>    
+    <!--底部-->
+    <div class="zhaobiaoDetail">
+        <div class="navBox"  style="background:url('img/ringDetailBottom_bg.png') no-repeat right center; background-size:1px 20px;">
+            <p></p>
+            <img id="getPhone" src="img/ringDetailGetNumber.png" alt="">
+            <p></p>
+        </div>
+        <!-- <div class="navBox" style="background:url('img/ringDetailBottom_bg.png') no-repeat right center ; background-size:1px 20px;">
+            <p></p>
+            <img src="img/ringDetailGetText.png" alt="">
+            <p></p>
+        </div> -->
+        <div class="navBox">
+            <p></p>
+            <img src="img/ringDetailGiveMore.png" alt="">
+            <p></p>
+        </div>
+    </div>
+</div>
+<div></div>
+</body>
+</html>
+<script>
+    (function(){
+        $("#getPhone").click(function(){
+        $(".getSometing").css({"display":"block"});
+        })
+        $(".getSometing p").click(function(){
+            $(".getSometing").css({"display":"none"});
+        })
+    })()
+    
+</script>
+<script type="text/javascript"  src="js/ring.js"></script>

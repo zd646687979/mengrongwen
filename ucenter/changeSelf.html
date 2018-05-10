@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>孟荣文建材装饰网</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/changeSelf.css">
+    <script type="text/javascript"  src="../js/index.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header"></div>
+
+<!--内容-->
+<form class="section selfSection">
+    <input type="button" class="btn" id="btn" value="保存">
+    <div class="selfHead">基本信息</div>
+    <div class="headImgBox">
+            <div class="localImag" id="localImag">  
+                <img src="../img/userheaderImg.png" class="preview" id="preview"/>  
+            </div>    
+            <div class="btnFile">  
+                <input type="file" class="file_head" name="file_head" id="file_head"/>  
+            </div>
+    </div>
+    <ul class="myContent">
+        <li><p>姓名</p><input type="text" id="name" placeholder="请使用您的真实姓名"></li>
+    </ul>
+</form>
+<!--底部-->
+<div></div>
+</body>
+</html>
+<script type="text/javascript"> 
+(function(){
+    // document.getElementById("file_head").onchange = setImagePreview();
+    document.getElementById("file_head").onchange = function () {  
+        var preview, img_txt, localImag, file_head = document.getElementById("file_head"),  
+        picture = file_head.value;  
+        if (!picture.match(/.jpg|.gif|.png|.bmp/i)) return console.log("您上传的图片格式不正确，请重新选择！"),  
+        !1;  
+        if (preview = document.getElementById("preview"), file_head.files && file_head.files[0]) preview.style.display = "block",  
+            preview.src = window.navigator.userAgent.indexOf("Chrome") >= 1 || window.navigator.userAgent.indexOf("Safari") >= 1 ? window.webkitURL.createObjectURL(file_head.files[0]) : window.URL.createObjectURL(file_head.files[0]),
+            console.log(preview.src);
+        else {  
+            file_head.select(),  
+            file_head.blur(),  
+            img_txt = document.selection.createRange().text,  
+            localImag = document.getElementById("localImag"); 
+            try {  
+                localImag.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)",  
+                localImag.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = img_txt 
+            } catch(f) {  
+                return alert("您上传的图片格式不正确，请重新选择！"),  
+                !1  
+            }  
+            preview.style.display = "none",  
+            document.selection.empty()  
+        }    
+        !0  
+    }  
+})()
+</script>  
