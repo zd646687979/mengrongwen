@@ -1,16 +1,25 @@
 (function () {
     //规格选择函数
     let openSpec =  function (){
-        $("#specBg").height($("#section").scrollTop()+$("#section").height());
-        $("#specBg").css({"display":"block"});
-        $("#specBox").css({bottom:-1*($("#section").scrollTop()+750)});
-        $("#specBox").animate({bottom:0},500);
-        $("#section").css({"overflow-y":"hidden"});
-        $(".specs li").each(function(i){
-            $(this).find(".specsContent span").each(function(){
-                $(this).css({"background":"#f7f7f7","color":"#999"});
-            })
-        });
+            $("#specBg").css({"display":"block"});
+            $("#specBox").css({bottom:-1*$("#specBox").height()});
+            $("#specBox").animate({bottom:0},$("#specBox").height());
+            $("#section").css({"overflow-y":"hidden"})
+            $(".specs li").each(function(i){
+                $(this).find(".specsContent span").each(function(){
+                    $(this).css({"background":"#f7f7f7","color":"#999"});
+                })
+            });
+        // $("#specBg").height($("#section").scrollTop()+$("#section").height());
+        // $("#specBg").css({"display":"block"});
+        // $("#specBox").css({bottom:-1*($("#section").scrollTop()+750)});
+        // $("#specBox").animate({bottom:0},500);
+        // $("#section").css({"overflow-y":"hidden"});
+        // $(".specs li").each(function(i){
+        //     $(this).find(".specsContent span").each(function(){
+        //         $(this).css({"background":"#f7f7f7","color":"#999"});
+        //     })
+        // });
     };
     //打开选择属性
     $("#lookSpec").click(function(){
@@ -18,11 +27,16 @@
     })
     //窗口关闭函数
     let close = function(){
-        $("#specBox").animate({bottom:-1*($("#section").scrollTop()+750)},500);
+        $("#specBox").animate({bottom:-1*$("#specBox").height()})
         setTimeout(function(){
-            $("#specBg").css({"display":"none"});
-        },500)
-        $("#section").css({"overflow-y":"auto"})
+             $("#specBg").css({"display":"none"});
+         },500)
+         $("#section").css({"overflow-y":"auto"})
+        // $("#specBox").animate({bottom:-1*($("#section").scrollTop()+750)},500);
+        // setTimeout(function(){
+        //     $("#specBg").css({"display":"none"});
+        // },500)
+        // $("#section").css({"overflow-y":"auto"})
     }
     
     //保存数据的JSON
@@ -41,6 +55,7 @@
     });
     //点击关闭
     $(".closeThis").click(function(){
+        
         for(key in specs){
             specs[key]="";
         }

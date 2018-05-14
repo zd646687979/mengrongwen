@@ -19,7 +19,7 @@
     <!--banner-->
     <div class="banner">
         <img src="img/圈子.png" alt="">
-        <a href="ringNews.html"><p class="newMsg"><span>99+</span>条新消息 &gt;&gt;</p></a>
+        <a href="ring/ringNews.html"><p class="newMsg"><span>99+</span>条新消息 &gt;&gt;</p></a>
     </div>
     <!--content内容-->
     <div class="content">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="userContent">
                     <!--招标-->
-                    <a href="zhaobiaoDetail.html">
+                    <a href="ring/zhaobiaoDetail.html">
                         <div class="zbcContentBox">
                             <img src="img/zhaobiaoimg.png" alt="">
                             <p>招一名瓦匠工人、一名刮瓷。每天120外带午餐，全勤工期半年。做五修二。<span>查看更多&gt;&gt;</span></p>
@@ -189,3 +189,39 @@
     })
 </script>
 <script type="text/javascript"  src="js/ring.js"></script>
+<script>
+    result = '<div class="contentBox">'+
+                '<div class="usersBox">'+
+                    '<a href="javascript:;"><img src="img/headerImg.png" alt=""></a>'+
+                    '<a href="javascript:;">'+
+                        '<div class="userRight">'+
+                            '<p class="names">孟荣文</p>'+
+                           ' <p class="company">上海呈骏建筑装饰有限公司</p>'+
+                        '</div>'+
+                    '</a>'+
+               ' </div>'+
+                '<div class="userContent">'
+                    +'<a href="zhaobiaoDetail.html">'
+                       + '<div class="zbcContentBox">'
+                          +'  <img src="img/zhaobiaoimg.png" alt="">'
+                            +'<p>招一名瓦匠工人、一名刮瓷。每天120外带午餐，全勤工期半年。做五修二。<span>查看更多&gt;&gt;</span></p>'
+                        +'</div>'
+                   +' </a>'
+               +' </div>'
+                +'<div class="commentBox">'
+                    +'<div class="commentTop">'
+                       +' <p class="timeBox"><span>16</span>分钟前</p>'
+                       + '<p class="praiseBox"> <i class="iconfont icon-haoping"></i><i class="iconfont icon-liaotianduihua"></i></p>'
+                   +' </div>'
+                   +' <div class="comment">'
+                        +'<div class"trigon"></div>'
+                        +'<p><span>宋振明</span>：工资一次结清还是按天算？</p>'
+                        +'<p><span>孟荣文</span>回复<span>宋振明</span>：电话私聊我</p>'
+                        +'<p><span>宋振明</span>：工资一次结清还是按天算？</p>'
+                       + '<p><span>宋振明</span>：工资一次结清还是按天算？</p>'
+                    +'</div>'
+               +' </div>'
+           +' </div>'; 
+    $(".ringContent").append(result);
+    getEvent();
+</script>

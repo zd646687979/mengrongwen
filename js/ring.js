@@ -5,9 +5,11 @@ let count =0;
 let isReplay = false;       //是否是评论
 let thisSpeakId =0;
 let childrenIndex = 0;
+function getEvent(){
     $(".contentBox").each(function(i){
-
         $(this).find(".ssBox").each(function(i){
+            //清除事件
+            $(this).find(".moreButton").off();
             //判断是否显示"全部"按钮
             let lineHeight = parseInt($(this).find(".sstitle").css("line-height"));
             let height = parseInt($(this).find(".sstitle").height());
@@ -38,6 +40,7 @@ let childrenIndex = 0;
 
 
         //点击评论
+        $(this).find(".iconfont").off();
         $(this).find(".iconfont").eq(1).click(function(){
             count = i;
             console.log(1);
@@ -79,9 +82,11 @@ let childrenIndex = 0;
                 }            
             })
         })
-
-
     })
+} 
+   
+getEvent();
+
 inputText.blur(function(){          
     setTimeout(()=>{
             inputBox.css("display","none");
@@ -96,18 +101,18 @@ inputBox.find("p").click(function(){
     let myText = inputText.val().replace(/(^\s*)|(\s*$)/g, "");
     let result = "";
     //拼接字符串
-    result = "<p><input type='hidden' value='22'><span>宋振明</span>："+myText+"</p>";
+    result = "<div><input type='hidden' value='22'><span>宋振明</span>："+myText+"</div>";
     let countContentBox = $(".contentBox").eq(count);
 
     //如果有评论框
     if(countContentBox.find(".comment").width()!=undefined){
         if(!isReplay){                                      //如果哦不是回复   
             
-            result = "<p><input type='hidden' value='22'><span>我的名字</span>："+myText+"</p>";
+            result = "<div><input type='hidden' value='22'><span>我的名字</span>："+myText+"</div>";
             countContentBox.find(".comment").append(result); //评论框中加一条
 
         }else{
-            result = "<p><input type='hidden' value='22'><span>我的名字</span>回复"+thisSpeakId+"："+myText+"</p>";
+            result = "<div><input type='hidden' value='22'><span>我的名字</span>回复"+thisSpeakId+"："+myText+"</div>";
             let isfirst =  !countContentBox.find(".comment").children().eq(childrenIndex+1).hasClass("replayBox");
             console.log("index是"+childrenIndex);
             console.log(isfirst);

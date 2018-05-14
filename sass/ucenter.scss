@@ -1,0 +1,88 @@
+$baseFontSize: 75;//基于视觉稿横屏尺寸/100得出的基准font-size
+@function rem($num){ //适配数值函数
+    @return  $num/$baseFontSize * 1rem;
+}
+.ucenterSection{
+    font-size: rem(32);
+    //头部
+    .userHead{background: url("../img/mine_bg.png") repeat-y;background-size:100% 1px;
+        .headTop{display: -webkit-flex;justify-content: space-between;align-items: center;-webkit-box-sizing: border-box;padding:0 rem(32);
+            .headerLeft{display: -webkit-flex;justify-content: flex-start;align-items: center;flex: 1;
+                img{height:rem(135);width:rem(135);margin:rem(32) 0;box-shadow:rem(2) 0 rem(10) rgba(0,0,0,.1),rem(-2) 0 rem(10) rgba(0,0,0,.1),0 rem(2) rem(10) rgba(0,0,0,.1),0 rem(-2) rem(10) rgba(0,0,0,.1);}
+                .titleName{height:100%;padding-left: rem(20);-webkit-box-sizing: border-box;
+                    p{color:#fff;}
+                    .icord{font-size: rem(24);color:#fdd6bf;padding-top: rem(16);}
+                }
+            }
+            .headerRight{width:rem(200);height:rem(150);display: -webkit-flex;justify-content: flex-end;align-items: center;color: #fff;font-size: rem(24);
+                span{&:last-child{font-size: rem(32)}}
+            }
+        }
+        .dateilNum{display: -webkit-flex;justify-content: space-between;align-items: center;padding-bottom:rem(16);
+            li{width: rem(150);height:100%;
+                a{
+                    color:#fff;
+                }
+                p{
+                    span{display: block;line-height: rem(54);height: rem(54);text-align: center}
+                    .classify{font-size: rem(26)}
+                }
+            }
+        }
+    }
+    //订单
+    .orderBox{background: #fff;margin-top:rem(16);
+        .orderTitle{-webkit-box-sizing: border-box;padding:0 rem(32);border-bottom: 1px solid #bdbdbd;height:rem(65);display: -webkit-flex;justify-content: space-between;align-items: center;
+            a{color: #666;font-size: rem(24);padding:rem(16);padding-right: 0;}
+        }
+        .orderOptionBox{padding:0 rem(32);-webkit-box-sizing: border-box;
+            .orderOption{display: -webkit-flex;justify-content: space-between;align-items: center;padding:rem(28) 0;
+                li{width:rem(130);font-size: rem(24);
+                    .iconfont{font-size: rem(50);color:#ffa115;}
+                    p{color:#666;display: -webkit-flex;justify-content: space-between;align-items: center;flex-direction: column;}
+                }
+            }
+            .newOrderBox{padding-bottom:rem(32);
+                .newOrder{background: #f7f7f7;border-radius: rem(10);padding:0 rem(16);-webkit-box-sizing: border-box;
+                    .newTitle{line-height: rem(54);height: rem(54);color:#999;font-size: rem(22)}
+                    .newContent{padding:0 0 rem(32);display: -webkit-flex;justify-content: space-between;align-items: center;
+                        img{height:rem(56); width: rem(56)}
+                        div{flex: 1;display:-webkit-flex;justify-content: space-between;align-items: flex-start;flex-direction: column;-webkit-box-sizing: border-box;padding:0 rem(24);
+                            p{font-size: rem(22);color:#999;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+                            .noTop{color:#60b1fa;}
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    //选项
+    .mineorder{margin-top:rem(16);background: #fff;
+        li{height:rem(112);border-bottom: .5px solid #bdbdbd;
+            div{height: 100%;display: -webkit-flex;justify-content: space-between;align-items: center;padding:0 rem(32);-webkit-box-sizing: border-box;
+               p{color:#333;display: -webkit-flex;justify-content: flex-start;align-items: center;
+                   .iconfont{color:#ffa115;padding-right: rem(32);font-size: rem(48);font-weight: 100;}
+               } 
+               .iconfont{font-size: rem(32);font-weight:600;color:#666;}
+            }
+            &:nth-child(2){
+                div{
+                    p{
+                        .iconfont{color:#60b1fa;}
+                    }
+                }
+            }
+        }
+    }
+    //退出登录
+    .outUser{
+        height:rem(90);background: #fff;margin-top:rem(32);margin-bottom:rem(28);border-top:.5px solid #bdbdbd;border-bottom:.5px solid #bdbdbd;
+        input{
+            width: 100%;line-height: rem(88);height: rem(88);text-align: center;font-size:rem(26);color: #333;background: none;border: none;
+            &:focus {
+                outline: -webkit-focus-ring-color auto 0;
+            }
+        }
+    }
+}

@@ -285,7 +285,6 @@
     display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
-    height: 0.88rem;
     font-size: 0.32rem; }
     .section .pinpai .pinpaiContentBox .pinpaititle img {
       display: block;
@@ -315,8 +314,8 @@
         .section .pinpai .pinpaiContentBox .pinpaititle .pinpaiLeft div span {
           display: block;
           font-size: 0.29333rem;
-          line-height: 0.32rem;
-          height: 0.32rem;
+          line-height: 0.42667rem;
+          height: 0.42667rem;
           color: #666;
           overflow: hidden;
           text-overflow: ellipsis;

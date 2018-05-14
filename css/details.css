@@ -4,11 +4,11 @@
   position: relative; }
   .detailsSection .phone {
     position: fixed;
-    bottom: 0.85333rem;
+    bottom: 1.70667rem;
     right: 0.42667rem;
     width: 2.8rem;
     height: 2.8rem;
-    z-index: 999999999999; }
+    z-index: 999; }
   .detailsSection .swiper-container {
     width: 100%;
     height: 10rem;
@@ -159,77 +159,6 @@
     -webkit-box-sizing: border-box;
     color: #666;
     font-size: 0.34667rem; }
-  .detailsSection .specBg {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    z-index: 100001; }
-    .detailsSection .specBg .specBox {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: #fff;
-      padding: 0.42667rem 0 0;
-      -webkit-box-sizing: border-box; }
-      .detailsSection .specBg .specBox .specTop {
-        -webkit-box-sizing: border-box;
-        padding: 0 0.42667rem;
-        display: -webkit-flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-bottom: 0.21333rem; }
-        .detailsSection .specBg .specBox .specTop img {
-          height: 2.13333rem;
-          width: 2.13333rem; }
-        .detailsSection .specBg .specBox .specTop p {
-          -webkit-box-sizing: border-box;
-          padding-left: 0.21333rem;
-          color: #333;
-          line-height: 0.64rem;
-          width: 6.66667rem;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          overflow: hidden; }
-      .detailsSection .specBg .specBox .specs {
-        -webkit-box-sizing: border-box;
-        padding: 0.21333rem 0.42667rem 0.42667rem; }
-        .detailsSection .specBg .specBox .specs .specsTitle {
-          line-height: 0.93333rem;
-          font-size: 0.37333rem;
-          color: #333; }
-        .detailsSection .specBg .specBox .specs .specsContent {
-          display: -webkit-flex;
-          justify-content: flex-start;
-          align-items: center;
-          flex-wrap: wrap; }
-          .detailsSection .specBg .specBox .specs .specsContent span {
-            padding: 0.21333rem;
-            font-size: 0.32rem;
-            color: #666;
-            background: #f7f7f7;
-            border-radius: 0.13333rem;
-            margin-right: 0.21333rem; }
-      .detailsSection .specBg .specBox .specBottom {
-        height: 1.28rem;
-        background: #ffaa2c; }
-        .detailsSection .specBg .specBox .specBottom input {
-          height: 100%;
-          width: 100%;
-          font-size: 0.37333rem;
-          color: #fff;
-          background: none;
-          border: none; }
-      .detailsSection .specBg .specBox .closeSpec {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 0.21333rem; }
   .detailsSection .goodsDescribe {
     color: #333;
     -webkit-box-sizing: border-box;
@@ -333,3 +262,77 @@
           width: 100%; }
         .detailsSection .getSometing .prompt .btnBox .close {
           color: #ffaa2c; }
+
+.specBg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 2147483647999;
+  overflow: hidden; }
+  .specBg .specBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0.42667rem 0 0;
+    -webkit-box-sizing: border-box; }
+    .specBg .specBox .specTop {
+      -webkit-box-sizing: border-box;
+      padding: 0 0.42667rem;
+      display: -webkit-flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-bottom: 0.21333rem; }
+      .specBg .specBox .specTop img {
+        height: 2.13333rem;
+        width: 2.13333rem; }
+      .specBg .specBox .specTop p {
+        font-size: 0.42667rem;
+        -webkit-box-sizing: border-box;
+        padding-left: 0.21333rem;
+        color: #333;
+        line-height: 0.64rem;
+        width: 6.66667rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden; }
+    .specBg .specBox .specs {
+      -webkit-box-sizing: border-box;
+      padding: 0.21333rem 0.42667rem 0.42667rem; }
+      .specBg .specBox .specs .specsTitle {
+        line-height: 0.93333rem;
+        font-size: 0.37333rem;
+        color: #333; }
+      .specBg .specBox .specs .specsContent {
+        display: -webkit-flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap; }
+        .specBg .specBox .specs .specsContent span {
+          padding: 0.21333rem;
+          font-size: 0.32rem;
+          color: #666;
+          background: #f7f7f7;
+          border-radius: 0.13333rem;
+          margin-right: 0.21333rem; }
+    .specBg .specBox .specBottom {
+      height: 1.28rem;
+      background: #ffaa2c; }
+      .specBg .specBox .specBottom input {
+        height: 100%;
+        width: 100%;
+        font-size: 0.37333rem;
+        color: #fff;
+        background: none;
+        border: none; }
+    .specBg .specBox .closeSpec {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.21333rem; }
